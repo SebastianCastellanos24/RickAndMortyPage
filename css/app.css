@@ -1,0 +1,567 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1REM = 10px */
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 1.6rem;
+    line-height: 2;
+    font-family: 'Edu NSW ACT Foundation', sans-serif;
+}
+
+.header{
+    overflow: hidden;
+    padding: 15rem 0;
+    position: relative;
+    background-color: rgba(4,204,228,0.5);
+}
+
+.video{
+    left: 50%;
+    min-height: 100%;
+    min-width: 100%;
+    opacity: 0.8;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+}
+
+video{
+    width: 100%;
+    position: center center;
+}
+
+.headerLogo{
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    padding: 0;
+    color: inherit;
+    display: flex;
+    cursor: pointer;
+}
+
+.logo:hover{
+    background-image: url(../img/logo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.2);
+}
+
+.div{
+    width: 100%;
+    height: 3rem;
+    background-color: #04b0c8;
+}
+
+.main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.searcher{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+    margin-top: 3rem;
+}
+
+.searcher input{
+    width: 50%;
+    height: 6rem;
+    margin-right: 2rem;
+    border: 0;
+    border-bottom: 0.4rem solid #04b0c8;
+    font-weight: 700;
+    font-size: 3rem;
+    color: #04b0c8;
+}
+
+.botonFilter{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 4rem;
+}
+
+.boton{
+    flex-basis: 20%;
+    height: auto;
+    padding: 2rem 0.5rem;
+    font-weight: 700;
+    font-size: 2.5rem;
+    background-color: #04b0c8;
+    border-radius: 0.3rem;
+    border-color:#04cce4;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0.5rem 0.5rem #094549;
+}
+
+.botonReset{
+    margin-left: 10%;
+    flex-basis: 25%;
+    height: auto;
+    font-weight: 700;
+    font-size: 2.5rem;
+    background-color: #04b0c8;
+    border-radius: 0.3rem;
+    border-color:#04cce4;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0.5rem 0.5rem #094549;
+}
+
+.boton:hover, .botonReset:hover{
+    background-color: #59b557;
+    border-color: #59b557;
+    transition: all 0.2s ease-in-out;
+    box-shadow: none;
+}
+
+.search{
+    border: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.search:hover{
+    transform: rotate(-90deg);
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+}
+
+.characters, .locations, .episode{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+}
+
+.card{
+    background-color: #f2f2f2;
+    border-radius: 0.3rem;
+    box-shadow: 0 0.5rem 0.5rem #094549;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.card:hover{
+    z-index: 1;
+    transform: scale(1.05);
+    box-shadow: 0 2rem 4rem #094549;
+    transition: all 0.3s ease-in-out;
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+    border-radius: 0.3rem;
+}
+
+.cardInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.cardInfo h3{
+    color: #04b0c8;
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 0.8rem 0;
+}
+
+.cardInfo span{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #04cce4;
+}
+
+.cardInfo p{
+    font-size: 2rem;
+    margin: 0.8rem 0;
+}
+
+.pagination{
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 0;
+}
+
+.footer{
+    width: 100%;
+    margin-top: 5rem;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #04b0c8;
+    border-top: 0.2rem solid #04b0c8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.terms{
+    margin: 0;
+    font-size: 3rem;
+    padding: 0 0.2rem;
+}
+
+.footer img{
+    width: 20rem;
+    margin: 0.5rem;
+    transform: translateY(0.4rem);
+}
+
+.IFooter{
+    display: flex;
+    margin-bottom: 4rem;
+    line-height: 1;
+}
+
+.logs{
+    margin-top: 5rem;
+}
+
+.logs img{
+    width: 6rem;
+    margin: 0 3rem;
+}
+
+.logs img:hover{
+    transform: scale(1.5);
+    transition: all 0.2s ease-in-out;
+}
+
+.endLine{
+    width: 100%;
+    height: 1rem;
+    background-color: #04b0c8;
+}
+
+/* Index Inicio*/
+
+.imageMain{
+    background-image: url(../img/bg2.jpg); 
+    background-position: center center; 
+    background-repeat: no-repeat;  
+    background-size: cover;
+    position: relative;
+}
+
+.links{
+    z-index: 1;
+    color: #f2f2f2;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 4rem;
+}
+
+.linked{
+    text-align: center;
+}
+
+.linked:nth-child(1){
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.linked:nth-child(2){
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+}
+
+.linked:nth-child(3){
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+.linked:nth-child(4){
+    grid-column: 4 / 5;
+    grid-row: 3 / 4;
+}
+
+.links a{
+    text-decoration: none;
+    color: #f2f2f2;
+    font-size: 5rem;
+    font-weight: 700;
+    background-color: rgba(4,204,228,0.95);
+    border-radius: 0.4rem;
+    padding: 6rem 5rem;
+    box-shadow: 0.5rem 1.5rem 2rem #04b0c8;
+}
+
+.links a:hover{
+    background-color: #04b0c8;
+    box-shadow: none;
+    opacity: 0.98;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Series */
+
+.seasons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+.fiximg img{
+    height: 60rem;
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.whatIsSerie{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.whatIsSerie h2{
+    font-size: 5rem;
+    font-weight: 700;
+    color: #04b0c8;
+    margin: 3rem 0 1rem 0;
+    text-align: center;
+}
+
+.infoSerie p{
+    font-weight: 600;
+    text-align: justify;
+}
+
+.infoSerie img{ 
+    width: 100%;
+    height: auto;
+    border-radius: 0.3rem;
+}
+
+.moreInfo h3, .sectionSeasons h3, .summary h3{
+    padding: 0 2rem;
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: #04b0c8;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.numbersSerie{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    border-top: #04cce4 0.2rem solid;
+    border-bottom: #04cce4 0.2rem solid;
+    margin-top: 5rem;
+}
+
+.numbers h4{
+    color: #04b0c8;
+    margin: 2rem 0;
+    font-weight: 900;
+    font-size: 8rem;
+    margin-bottom: 0;
+}
+
+.numbers h4:hover{
+    cursor: default;
+    transform: scale(2);
+    transition: all 0.25s ease-in-out;
+}
+
+.numbers p{
+    color: #04cce4;
+    font-weight: 700;
+    font-size: 4rem;
+    margin-top: 0;
+}
+
+.streamings{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.stream{
+    flex-basis: 25%;
+    height: auto;
+    background-color: #04cce4;
+    border-radius: 0.3rem;
+    box-shadow: 0 1rem 2rem #04b0c8;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.stream img{
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.stream p{
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    font-size: 3rem;
+    color: white;
+}
+
+.returnPrincipal{
+    width: 50%;
+    margin: auto;
+    text-decoration: none;
+    height: auto;
+    background-color: #04cce4;
+    display: block;
+    text-align: center;
+    color:white;
+    font-size: 3rem;
+    font-weight: 700;
+    border-radius: 0.3rem;
+    box-shadow: 0 1rem 2rem #04b0c8;
+}
+
+.returnPrincipal:hover, .stream:hover{
+    background-color: #04b0c8;
+    box-shadow: none;
+    transition: all 0.2s ease-in-out;
+}   
+
+.summary video{
+    margin-bottom: 5rem;
+    border-radius: 0.5rem;
+}
+
+@media (max-width: 900px){
+    
+    .header{
+        padding: 0;
+        height: auto;
+    }
+    .headerLogo{
+        transform: scale(0.6);
+        height: auto;
+    }
+
+    .links{
+        padding: 5rem 0;
+        display: flex;
+        flex-direction: column;        
+    }
+
+    .links a{
+        padding: 2rem 4rem;
+        margin: 0 10%;
+        font-size: 4rem;
+    }
+
+    .logs img{
+        margin: 0 1.5rem;
+    }
+
+    .terms{
+        font-size: 2rem;
+    }
+
+    .searcher input{
+        width: 100%;
+        font-size: 2rem;
+    }
+
+    .searcher{
+        margin-bottom: 3rem;
+    }
+
+    .botonReset{
+        display: block;
+        margin-left: 5%;
+        font-size: 2rem;
+    }
+
+    .botonFilter{
+        flex-wrap: wrap;
+        margin: 5% 0;
+    }
+
+    .boton{
+        flex-basis: 45%;
+        margin: 1rem 0;
+        font-size: 2rem;
+        padding: 1rem 1rem; 
+    }
+
+    .characters, .episode, .locations{
+        display: flex;
+        flex-wrap: wrap
+    }
+
+    .card{
+        line-height: 1;
+        font-size: 1rem;
+        padding: 0.5rem;
+        flex: 1 1 auto;
+    }
+
+    .cardInfo{
+        font-size: 2rem;
+    }
+
+    .cardInfo h3, .cardInfo p{
+        margin: 0.5rem 0;
+    }
+
+    .whatIsSerie{
+        width: 100%;
+    }
+
+    .numbers h4{
+        font-size: 6rem;
+    }
+
+    .numbers p{
+        font-size: 3rem;
+    }
+
+    .stream{
+        flex-basis: 42%;
+    }
+
+    .sectionSeasons h3{
+        padding: 0;
+    }
+
+    .seasons{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width: 370px){
+
+    .headerLogo{
+        transform: scale(0.7);
+        height: 10rem;
+    }
+    video{
+        height: 100%;
+    }
+    .links a{
+        font-size: 3rem;
+    }
+
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Characters</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="container">
+
+    <div class="header">
+        <div class="video">
+            <video muted autoplay loop src="vid/morty.mp4"></video>
+        </div>
+        <div class="headerLogo">
+            <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo Rick & Morty" ></a>
+        </div>
+    </div>
+
+    <div class="div"></div>
+    
+    <main class="main">
+
+        <div class="searcher">
+            <input id="searchInput" placeholder="Search for a character..." />
+            <button class="search" id="search"><img src="img/buscar2.png" width="45px"></button>
+        
+            <button class="botonReset" id="start">Reset Filters</button>
+        </div>
+
+        <div class="botonFilter">
+            <button class="boton" id="alive">Alive characters</button>
+            <button class="boton" id="dead">Dead characters</button>
+            <button class="boton" id="male">Male characters</button>
+            <button class="boton" id="female">Female characters</button>
+        </div>
+
+        <div id="characters" class="characters"></div>
+
+        <div class="pagination">
+            <button class="boton" id="prev">Prev</button>
+            <button class="boton" id="next">Next</button>
+        </div>
+
+        <a class="returnPrincipal" href="index.html">Back to menu</a>
+
+    </main>
+
+    <footer class="footer">
+        <div class="logs">
+            <a href="#"><img src="img/in.png" alt="LinkedIn Log"></a>
+            <a href="#"><img src="img/ig.png" alt="LinkedIn Log"></a>
+            <a href="#"><img src="img/git.png" alt="LinkedIn Log"></a>
+        </div>
+        <p class="terms">Terms of Use - Privacy Policy</p>
+        <div class="IFooter">
+            <p>© 2022</p>
+            <img src="img/Firma.png" alt="FirmaCreador" >
+        </div>
+    </footer>
+
+</body>
+<script src="getApi/characters.js" type ="module" async defer ></script>
+</html>
